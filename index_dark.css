@@ -1,0 +1,29 @@
+body.dark {
+  --color-p-lime-green: hsl(163, 72%, 41%);
+  --color-p-bright-red: hsl(356, 69%, 56%);
+  --color-p-facebook: hsl(208, 92%, 53%);
+  --color-p-twitter: hsl(203, 89%, 53%);
+  --color-p-instagram: linear-gradient(to right,hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
+  --color-p-youtube: hsl(348, 97%, 39%);
+  --color-dark-toggle: linear-gradient(to right, hsl(210, 78%, 56%) to hsl(146, 68%, 55%));
+  --color-light-toggle: hsl(230, 22%, 74%);
+  --color-n-dark-very-dark-blue-bg: hsl(230, 17%, 14%);
+  --color-n-dark-very-dark-blue-topbg:hsl(232, 19%, 15%);
+  --color-n-dark-dark-desat-blue: hsl(228, 28%, 20%);
+  --color-n-dark-desat-blue: hsl(228, 34%, 66%);
+  --color-n-dark-white: hsl(0, 0%, 100%);
+  --color-n-light-white-bg: hsl(0, 0%, 100%);
+  --color-n-light-very-pale-blue: hsl(225, 100%, 98%);
+  --color-n-light-light-grayish-blue: hsl(227, 47%, 96%);
+  --color-n-light-dark-grayish-blue: hsl(228, 12%, 44%);
+  --color-n-light-very-dark-blue: hsl(230, 17%, 14%);
+  background: var(--color-n-dark-very-dark-blue-bg);
+}
+body.dark .attribution {
+  text-align: center;
+  color: var(--color-n-dark-white);
+}
+body.dark .attribution a {
+  text-decoration: none;
+  color: var(--color-p-youtube);
+}
