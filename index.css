@@ -6,15 +6,18 @@
   --color-p-bright-red: hsl(356, 69%, 56%);
   --color-p-facebook: hsl(208, 92%, 53%);
   --color-p-twitter: hsl(203, 89%, 53%);
-  --color-p-instagram: linear-gradient(to right,hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+  --color-p-instagram: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
   --color-p-youtube: hsl(348, 97%, 39%);
-  --color-dark-toggle: linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+  --color-dark-toggle: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
   --color-light-toggle: hsl(230, 22%, 74%);
-  --color-n-dark-very-dark-blue-bg: hsl(230, 17%, 14%);
-  --color-n-dark-very-dark-blue-topbg: hsl(232, 19%, 15%);
-  --color-n-dark-dark-desat-blue: hsl(228, 28%, 20%);
-  --color-n-dark-desat-blue: hsl(228, 34%, 66%);
-  --color-n-dark-white: hsl(0, 0%, 100%);
   --color-n-light-white-bg: hsl(0, 0%, 100%);
   --color-n-light-very-pale-blue: hsl(225, 100%, 98%);
   --color-n-light-light-grayish-blue: hsl(228, 50%, 96%);
@@ -29,6 +32,8 @@ body {
   box-sizing: border-box;
   background: var(--color-n-light-white-bg);
   color: var(--color-n-light-dark-grayish-blue);
+  overflow-x: hidden;
+  transition: all 0.2s;
 }
 .top-bg-section {
   background: var(--color-n-light-very-pale-blue);
@@ -47,11 +52,15 @@ body {
 .light-theme-dark-text {
   color: var(--color-n-light-very-dark-blue);
   font-weight: bold;
+  margin: 0;
 }
 .sm-stats-card {
   background: var(--color-n-light-light-grayish-blue);
   transition: background 0.2s;
   max-width: 260px;
+  max-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .sm-stats-card:hover {
   background: hsl(223, 11%, 88%);
@@ -82,7 +91,7 @@ body {
   border-top: 0.3rem solid var(--color-p-youtube);
 }
 .sm-stats-card-number {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .sm-card-followers {
   font-size: 1.2rem;
@@ -106,4 +115,27 @@ body {
 .attribution a {
   text-decoration: none;
   color: var(--color-p-facebook);
+}
+
+@media screen and (max-width: 992px) {
+  .sm-stats-card {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sm-stats-card {
+    margin-bottom: 1rem;
+  }
+  .top-60 {
+    top: 80% !important;
+  }
+  .sm-header-col-1 {
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid var(--color-n-light-dark-grayish-blue);
+  }
+}
+@media screen and (max-width: 576px) {
+  .sm-header-col-2 {
+    margin-top: 0.8rem;
+  }
 }
